@@ -1,0 +1,98 @@
+ body {
+	margin:0;
+	padding:0;
+}
+
+#map {
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:100%;
+}
+
+a {
+	color: #0077ff;
+}
+
+.save-control {
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	padding: 0px;
+ }
+
+.paint {
+	cursor: url('cursors/airbrush.png'), auto;
+}
+
+.erase {
+	cursor: url('cursors/eraser.png'), auto;
+}
+
+.md-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s;
+  background-color: black;
+  z-index: 1000;
+}
+
+.md-show.md-overlay {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.modal {
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    width: 40%;
+    max-height: 60%;
+    top: 40%;
+    left: 30%;
+    visibility: hidden;
+    opacity: 0;
+	transition: all 0.8s;
+	/*padding: 20px;*/
+    z-index: 1001;
+}
+
+.md-show.modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal p {
+	padding: 4px 20px;
+}
+
+.md-close {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  border: 0;
+  background-color: transparent;
+  padding: 5px 5px;
+  transition: .4s;
+}
+
+.md-close:hover {
+	cursor: pointer;
+    border-color: rgba(#fff, 1);
+    transition: .4s;
+}
+
+.info {
+	color: #C00000;
+	font-style: italic;
+}
+
+.key-higlight {
+  background-color: #eee;
+}

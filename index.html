@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<meta charset='utf-8'>
+<html>
+	<head>
+	    <title>HeatMap Painter</title>
+	    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css' />
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js'></script>
+	    <script src='leaflet-heat.js'></script>
+	    <script src='leaflet-hash.js'></script>
+	    <link rel='stylesheet' href='style.css' />
+	</head>
+	<body>
+		<div id='map'></div>
+		<div id="md-overlay" class="md-overlay"></div>
+		<div id="md-info" class="modal">
+			<button id="md-close" class="md-close">×</button>
+			<p>Press and hold <span class="key-higlight">"Spacebar"</span> for painting</p>
+			<p>Press and hold <span class="key-higlight">"Ctrl"</span> or <span class="key-higlight">"Cmd"</span> for erasing</p>
+		</div>
+		<script src='app.js'></script>
+	</body>
+</html>
