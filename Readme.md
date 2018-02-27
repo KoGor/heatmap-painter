@@ -1,4 +1,4 @@
-# Hetmap Painter #
+# Heatmap Painter #
 ## About ##
 Tool for drawing interactive heatmaps with real data points. Quite useful for geodata visual editing and making mockups.
 
